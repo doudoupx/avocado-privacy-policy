@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>豆豆记账 隐私政策</title>
+<style>
+  :root { --fg:#1c1c1e; --muted:#6b6b70; --bg:#ffffff; --card:#f5f5f7; --line:#e2e2e6; --accent:#4a8f52; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#eaeaec; --muted:#a0a0a6; --bg:#121214; --card:#1d1d20; --line:#2c2c30; --accent:#7bbf83; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 32px 20px 80px;
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", Roboto, sans-serif;
+    color: var(--fg); background: var(--bg);
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.7rem; margin: 0 0 6px; }
+  h2 { font-size: 1.2rem; margin: 2.2em 0 0.6em; padding-top: 0.4em; border-top: 1px solid var(--line); }
+  h2:first-of-type { border-top: none; }
+  .date { color: var(--muted); font-size: 0.95rem; margin: 0 0 1.5em; }
+  p, li { color: var(--fg); }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  .fill { color: var(--muted); font-style: italic; }
+  table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 10px 12px; border: 1px solid var(--line); vertical-align: top; }
+  th { background: var(--card); font-weight: 600; }
+  .table-wrap { overflow-x: auto; }
+  strong { color: var(--fg); }
+</style>
+</head>
+<body>
+<main>
+  <h1>豆豆记账 隐私政策</h1>
+  <p class="date">生效日期：2026 年 7 月 13 日</p>
+
+  <p>运营者：林有祥（YOUXIANG LIN，下称"我们"）。</p>
+  <p>本政策说明「豆豆记账」App（下称"本 App"）如何收集、使用、存储和保护你的信息。使用本 App 前请仔细阅读。你继续使用即表示同意本政策。</p>
+
+  <h2>一、我们收集哪些信息</h2>
+  <p>我们<strong>只收集提供记账功能所必需的信息</strong>：</p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>信息</th><th>来源</th><th>用途</th></tr></thead>
+    <tbody>
+      <tr><td>账户标识符（Apple 用户标识）</td><td>你使用「通过 Apple 登录」时由 Apple 提供</td><td>识别并保护你的账户；我们不会获得你的 Apple 账号密码</td></tr>
+      <tr><td>姓名或昵称</td><td>首次使用「通过 Apple 登录」时由 Apple 提供，或由你主动修改</td><td>作为账户默认昵称及展示名称</td></tr>
+      <tr><td>记账数据（交易金额、类型、分类、备注、日期、账户名称与余额）</td><td>你在 App 内主动录入</td><td>记录、统计、展示你的收支</td></tr>
+      <tr><td>消费凭证图片（小票、支付截图等）</td><td>你主动上传以自动识别</td><td>通过文字识别（OCR）自动生成记账记录</td></tr>
+      <tr><td>登录令牌</td><td>登录后由服务器下发</td><td>保存在你的设备本地，用于保持登录状态</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>我们<strong>不收集</strong>：手机号、通讯录、位置、用于追踪的设备唯一标识。本 App <strong>不含</strong>广告、第三方统计或用户画像。</p>
+
+  <h2>二、第三方处理（重要）</h2>
+  <p>为实现小票自动识别，你上传的<strong>消费凭证图片会被发送至火山引擎（北京火山引擎科技有限公司，字节跳动旗下）提供的大模型服务</strong>进行文字识别处理。该处理仅用于识别图片中的消费信息，识别结果返回后用于生成你的记账记录。</p>
+  <ul>
+    <li>处理方：火山引擎（ARK 大模型服务）</li>
+    <li>处理内容：你上传的消费凭证图片</li>
+    <li>处理目的：文字识别（OCR）</li>
+    <li>其隐私政策：<a href="https://www.volcengine.com/docs/6256/64902">https://www.volcengine.com/docs/6256/64902</a></li>
+  </ul>
+  <p>除上述用于 OCR 的图片处理外，我们<strong>不会</strong>将你的记账数据提供、出售或共享给任何第三方。</p>
+
+  <h2>三、图片留存</h2>
+  <p>上传的消费凭证图片在服务器<strong>最多留存 14 天</strong>，用于识别失败时的自动重试与你的人工核对，超过留存期后自动删除。</p>
+
+  <h2>四、存储与安全</h2>
+  <ul>
+    <li>你的数据存储在我们自有的服务器上，全程通过 HTTPS 加密传输。</li>
+    <li>数据按用户隔离，你只能访问自己的数据。</li>
+    <li>我们采取合理的技术与管理措施保护你的信息，但请理解互联网传输无法保证绝对安全。</li>
+  </ul>
+
+  <h2>五、你的权利：删除账户与数据</h2>
+  <p>你可随时在 App 内 <strong>「设置 → 删除账号」</strong> 永久删除你的账户及全部关联数据（记账记录、账户、上传图片、访问密钥等）。删除后数据不可恢复，且原有登录立即失效。</p>
+
+  <h2>六、未成年人</h2>
+  <p>本 App 不面向 14 周岁以下儿童。若你是未成年人，请在监护人指导下使用。</p>
+
+  <h2>七、政策变更</h2>
+  <p>我们可能适时更新本政策，更新后会在本页面公布并更新生效日期。重大变更将通过 App 内提示等方式告知。</p>
+
+  <h2>八、联系我们</h2>
+  <p>如对本政策或你的信息有任何疑问，请联系：<a href="mailto:support@doudou.life">support@doudou.life</a></p>
+</main>
+</body>
+</html>
