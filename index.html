@@ -32,12 +32,16 @@
     color: var(--muted); font-size: 0.85rem; text-align: center; }
   .icp a { color: var(--muted); text-decoration: none; }
   strong { color: var(--fg); }
+  .langswitch { margin: 0 0 1.8em; font-size: 0.95rem; }
+  .en-title { margin-top: 3em; padding-top: 2em; border-top: 3px solid var(--line); }
 </style>
 </head>
 <body>
 <main>
   <h1>小豆记账 隐私政策</h1>
-  <p class="date">生效日期：2026 年 8 月 29 日</p>
+  <p class="date">生效日期：2026 年 9 月 1 日</p>
+
+  <p class="langswitch"><a href="#en">English version below →</a></p>
 
   <p>运营者：YOUXIANG LIN（下称"我们"）。</p>
   <p>本政策说明「小豆记账」App（下称"本 App"）如何收集、使用、存储和保护你的信息。使用本 App 前请仔细阅读。你继续使用即表示同意本政策。</p>
@@ -67,6 +71,13 @@
     <li>处理目的：文字识别（OCR）与退款匹配</li>
     <li>其隐私政策：<a href="https://www.volcengine.com/docs/6256/64902">https://www.volcengine.com/docs/6256/64902</a></li>
   </ul>
+  <p><strong>第三方保护水平确认</strong></p>
+  <p>我们与火山引擎之间适用《火山方舟大模型服务平台专用条款》，其中约定：</p>
+  <ul>
+    <li>第 3.7.7 条：「未经您的单独同意，火山引擎不会存储和使用您的数据来训练或优化模型。」</li>
+    <li>第 3.7.11 条：「未经您授权，火山引擎不会访问或使用您的数据。」</li>
+  </ul>
+  <p>据此我们确认：<strong>火山引擎对经由本 App 传输的数据提供与本政策所述同等或更高水平的保护</strong>——该数据仅用于完成你发起的这一次识别请求，不用于模型训练或优化，未经授权不会被访问或另作他用。完整条款见：<a href="https://www.volcengine.com/docs/82379/1104498">https://www.volcengine.com/docs/82379/1104498</a></p>
   <p>上述处理<strong>需要你在 App 内明确同意后才会发生</strong>。首次使用图片识别时，App 会先说明发送的内容与接收方并征求你的同意；不同意则图片识别不可用，手动记账不受影响。你可随时在 App 内<strong>「我的 → AI 识别与隐私」</strong>查看该说明或撤回同意。</p>
   <p>除上述用于 OCR 与退款匹配的处理外，我们<strong>不会</strong>将你的记账数据提供、出售或共享给任何第三方。</p>
 
@@ -91,6 +102,70 @@
 
   <h2>八、联系我们</h2>
   <p>如对本政策或你的信息有任何疑问，请联系：<a href="mailto:support@doudou.life">support@doudou.life</a></p>
+
+  <h1 id="en" class="en-title">Xiaodou Ledger Privacy Policy</h1>
+  <p class="date">Effective date: September 1, 2026</p>
+
+  <p>Operator: YOUXIANG LIN ("we", "us").</p>
+  <p>This policy explains how the Xiaodou Ledger app ("the App") collects, uses, stores and protects your information. Please read it before using the App. Continuing to use the App means you accept this policy.</p>
+  <p class="fill">This English text and the Chinese text above are the same policy. If they differ, the Chinese text governs.</p>
+
+  <h2>1. What we collect</h2>
+  <p>We collect <strong>only what the expense-tracking function requires</strong>:</p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Data</th><th>How it is collected</th><th>What it is used for</th></tr></thead>
+    <tbody>
+      <tr><td>Account identifier (Apple user identifier)</td><td>Provided by Apple when you use Sign in with Apple</td><td>To identify and secure your account. We never receive your Apple Account password</td></tr>
+      <tr><td>Name or nickname</td><td>Provided by Apple on first Sign in with Apple, or edited by you</td><td>Used as your default nickname and display name</td></tr>
+      <tr><td>Ledger data (total assets, transaction amount, type, category, note, date)</td><td>Entered by you in the App</td><td>To record, total and display your income and spending</td></tr>
+      <tr><td>Receipt images (receipts, payment screenshots)</td><td>Uploaded by you for automatic recognition</td><td>To generate ledger entries through text recognition (OCR)</td></tr>
+      <tr><td>Login token</td><td>Issued by our server after sign-in</td><td>Stored locally on your device to keep you signed in</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>We do <strong>not</strong> collect: phone number, contacts, location, or any unique device identifier used for tracking. The App contains <strong>no</strong> advertising, third-party analytics, or user profiling.</p>
+
+  <h2>2. Third-party processing (important)</h2>
+  <p>To recognise receipts automatically, the <strong>receipt image you upload is sent to the large-model service operated by Volcano Engine (Beijing Volcano Engine Technology Co., Ltd., a ByteDance company)</strong> for text recognition. The processing is used only to read the spending information in the image; the result is returned and used to create your ledger entry.</p>
+  <p>When a recognised item is a refund, in order to find the original expense it belongs to, <strong>a summary of your last 90 days of expenses (amount, note, category, date) is sent to the same service</strong> for matching. This happens only inside the image-recognition flow.</p>
+  <ul>
+    <li>Recipient: Volcano Engine (ARK large-model service)</li>
+    <li>Data sent: the receipt image you upload; plus a 90-day expense summary when matching a refund</li>
+    <li>Purpose: text recognition (OCR) and refund matching</li>
+    <li>Its privacy policy: <a href="https://www.volcengine.com/docs/6256/64902">https://www.volcengine.com/docs/6256/64902</a></li>
+  </ul>
+  <p><strong>Confirmation that the third party provides the same or equal protection</strong></p>
+  <p>Our use of the service is governed by the <em>Volcano Engine ARK Large-Model Service Platform Specific Terms</em>, which provide:</p>
+  <ul>
+    <li>Article 3.7.7: "Without your separate consent, Volcano Engine will not store or use your data to train or optimise models."</li>
+    <li>Article 3.7.11: "Without your authorisation, Volcano Engine will not access or use your data."</li>
+  </ul>
+  <p>On that basis we confirm: <strong>Volcano Engine provides protection for data transmitted through the App that is the same as, or stronger than, the protection described in this policy</strong> — the data is used only to complete the single recognition request you initiated, is not used to train or optimise models, and is not accessed or repurposed without authorisation. Full terms: <a href="https://www.volcengine.com/docs/82379/1104498">https://www.volcengine.com/docs/82379/1104498</a></p>
+  <p>The processing above <strong>only happens after you give explicit consent inside the App</strong>. Before image recognition can be used, the App first states what will be sent and who receives it, and asks for your agreement. If you decline, image recognition is unavailable. You can review that disclosure or withdraw your consent at any time under <strong>Profile → AI Recognition &amp; Privacy</strong>.</p>
+  <p>Apart from the OCR and refund-matching processing described above, we do <strong>not</strong> provide, sell or share your ledger data with any third party.</p>
+
+  <h2>3. Image retention</h2>
+  <p>Uploaded receipt images are kept on the server for <strong>at most 14 days</strong>, so that failed recognitions can be retried automatically and so you can check them yourself. They are deleted automatically after that period.</p>
+
+  <h2>4. Storage and security</h2>
+  <ul>
+    <li>Your data is stored on our own servers and transmitted over HTTPS throughout.</li>
+    <li>Data is isolated per user; you can only access your own data.</li>
+    <li>We apply reasonable technical and organisational measures to protect your information, though no internet transmission can be guaranteed absolutely secure.</li>
+  </ul>
+
+  <h2>5. Your rights: deleting your account and data</h2>
+  <p>You can permanently delete your account and all associated data (total assets, ledger records, uploaded images, access tokens) at any time under <strong>Settings → Delete Account</strong>. Deleted data cannot be recovered, and existing sessions stop working immediately.</p>
+
+  <h2>6. Minors</h2>
+  <p>The App is not directed at children under 14. If you are a minor, please use it under the guidance of a guardian.</p>
+
+  <h2>7. Changes to this policy</h2>
+  <p>We may update this policy from time to time. Updates will be published on this page with a revised effective date. Material changes will also be announced in the App.</p>
+
+  <h2>8. Contact us</h2>
+  <p>If you have any question about this policy or your information, contact: <a href="mailto:support@doudou.life">support@doudou.life</a></p>
 
   <p class="icp"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">粤ICP备2026065879号-2A</a></p>
 </main>
